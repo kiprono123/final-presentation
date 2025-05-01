@@ -36,34 +36,39 @@ I’ll walk you through the Python code we wrote for the Raspberry Pi. It plays 
 
 We start by importing the RPi.GPIO library to read input from the button. We also import time for delays and os to run commands to play audio files.
 
-GPIO Setup
-Στιγμιότυπο οθόνης (91)
+# GPIO Setup
+<img width="467" alt="image" src="https://github.com/user-attachments/assets/73288cba-6666-4ea0-99a9-957ba8f3ac1d" />
+
 
 We set the pin mode to use the physical layout of the board and define our button pin as an input with a pull-up resistor to detect button presses correctly.
 
-Play Sound Function
-Στιγμιότυπο οθόνης (92)
+# Play Sound Function
+![Screenshot 2025-05-01 135704](https://github.com/user-attachments/assets/a1bd9a7f-6203-4cd9-b646-88a1af8c612e)
+
 
 This function plays a .wav file using the aplay command. You can replace the filename with any sound you want.
 
-Main Loop Begins
-Στιγμιότυπο οθόνης (93)
+# Main Loop Begins
+![Screenshot 2025-05-01 135722](https://github.com/user-attachments/assets/0bdc3b05-639a-4d0f-97e2-6f3e067b326a)
+
 
 This is the loop that keeps checking for the button press. When it detects a press, it plays the sound and waits one second before checking again. If we stop the program using Ctrl+C, it cleans up the pins.
 
-Cleanup on Exit
-Στιγμιότυπο οθόνης (94)
+# Cleanup on Exit
+![Screenshot 2025-05-01 135731](https://github.com/user-attachments/assets/3b378ae5-4d25-4f99-80f8-3541477f0b93)
+
 
 This command ensures that all GPIO pins are safely reset when the program ends. It’s good practice to include this to avoid issues in future programs.
 
-References
+# References
 What is a Raspberry Pi? Raspberry Pi. (2025, March 18). https://raspberrypi.cl/que-es-raspberry/
 
 Timmons-Brown, M. (2019a). Learn robotics with Raspberry Pi: Build and code your own moving, sensing, thinking Robots. No Starch Press, Inc.
 
 Raspberry Pi Documentation. (2025). Playing audio on the Raspberry Pi. https://www.raspberrypi.com/documentation/computers/audio.html
 
-IMG_2306
+![439616725-4aa1157d-6e56-4805-bc7c-4c24d370296e (1)](https://github.com/user-attachments/assets/5c4531dc-433a-4b2e-80da-ff461cd5b079)
+
 
 0 commit comments
 Comments
